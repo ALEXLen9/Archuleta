@@ -3,27 +3,36 @@
     position: relative;
 }
 
-#container{
+#container {
     height: 100%;
-} 
+}
 
 .highcharts {
     justify-content: center;
     align-items: center;
     padding: 5rem 2rem;
     width: 100%;
+
+    @media screen and ($tablet-lg) {
+        padding: 5rem 1rem;
+    }
 }
 
 .highcharts__text {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .highcharts__welcome {
     font-size: 2rem;
     font-weight: 600;
     color: $black;
+
+    @media screen and ($mobile-sm) {
+        font-size: 1.5rem;
+    }
 }
 
 .highcharts__nav {
@@ -37,15 +46,58 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+
+    @media screen and ($mobile) {
+        flex-wrap: wrap;
+    }
 }
 
 .chart {
     width: 75%;
+
+    @media screen and ($tablet) {
+        width: 60%;
+    }
+
+    @media screen and ($mobile) {
+        width: 100%;
+    }
 }
 
 .highcharts__stats {
     width: 25%;
     margin-left: 2rem;
+
+    @media screen and ($tablet-lg) {
+        margin-left: 0.5rem;
+        width: 40%;
+    }
+
+    @media screen and ($mobile) {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+
+    @media screen and ($mobile-sm) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.highcharts__mobile {
+    @media screen and ($mobile) {
+        width: 50%;
+
+        margin-right: 1rem;
+    }
+
+    @media screen and ($mobile-sm) {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 .highcharts__item {
@@ -123,4 +175,12 @@
     background-color: $white;
     border-top: 2px solid $red;
     border-bottom: 1px solid rgba($color: $gray, $alpha: 0.3);
+
+    @media screen and ($mobile) {
+        width: 50%;
+    }
+
+    @media screen and ($mobile-sm) {
+        width: 100%;
+    }
 }

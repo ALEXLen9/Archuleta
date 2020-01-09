@@ -2,4 +2,16 @@
     margin-left: 2rem;
     width: 100%;
     cursor: pointer;
+
+    @media screen and ($tablet) {
+        margin-left: 1rem;
+    }
+
+    @media screen and ($mobile-sm) {
+        margin-left: 0.5rem;
+    }
+}
+
+.logo__img{
+    width: 170px;
 }

@@ -48,6 +48,11 @@
     position: relative;
     margin: 2rem 0;
     margin-left: 5.33rem;
+
+    @media screen and ($mobile) {
+        margin: 0.5rem 0;
+        margin-left: 5.33rem;
+    }
 }
 
 .slider__icon {

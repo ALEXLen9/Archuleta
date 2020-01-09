@@ -1,8 +1,13 @@
-.footer{
+.footer {
     display: block;
     position: absolute;
     bottom: 2rem;
     left: 2rem;
+
+    @media screen and ($tablet-lg) {
+        bottom: 1rem;
+        left: 1rem;
+    }
 }
 
 .footer__text {
@@ -10,4 +15,8 @@
     color: $gray;
 
     font-weight: 300;
+
+    @media screen and ($mobile-sm) {
+        font-size: 0.68rem;
+    }
 }

@@ -9,10 +9,15 @@
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
+    z-index: 100;
 
     &.closed {
         margin-left: -$sideMenuWidth;
+    }
 
+    @media screen and ($tablet) {
+        position: fixed;
+        display: block;
     }
 }
 
