@@ -1,0 +1,13 @@
+.footer{
+    display: block;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.footer__text {
+    font-size: 0.92rem;
+    color: $gray;
+
+    font-weight: 300;
+}

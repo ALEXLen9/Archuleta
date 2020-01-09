@@ -1,0 +1,126 @@
+.content {
+    width: 100%;
+    position: relative;
+}
+
+#container{
+    height: 100%;
+} 
+
+.highcharts {
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    width: 100%;
+}
+
+.highcharts__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highcharts__welcome {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $black;
+}
+
+.highcharts__nav {
+    color: $gray;
+    font-weight: 700;
+    font-size: 0.76rem;
+
+}
+
+.highcharts__charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.chart {
+    width: 75%;
+}
+
+.highcharts__stats {
+    width: 25%;
+    margin-left: 2rem;
+}
+
+.highcharts__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.blue__bg {
+    background-color: $blue__on;
+    border-left: 5rem solid $blue__sec;
+
+    .highcharts__value {
+        border-bottom: 1px solid $blue__sec;
+    }
+}
+
+.orange__bg {
+    background-color: $orange__on;
+    border-left: 5rem solid $orange__sec;
+
+    .highcharts__value {
+        border-bottom: 1px solid $orange__sec;
+    }
+}
+
+.green__bg {
+    background-color: $green__on;
+    border-left: 5rem solid $green__sec;
+
+    .highcharts__value {
+        border-bottom: 1px solid $green__sec;
+    }
+}
+
+.highcharts__icon {
+    position: absolute;
+    top: 25%;
+    left: -3.7rem;
+    z-index: 1;
+}
+
+.highcharts__name {
+    color: $white;
+    font-size: 0.92rem;
+    font-weight: 300;
+
+    text-transform: uppercase;
+}
+
+.highcharts__value {
+    color: $white;
+    font-size: 1.33rem;
+    font-weight: 700;
+
+}
+
+.highcharts__increase {
+    color: $white;
+    font-size: 0.65rem;
+    font-weight: 300;
+    margin-top: 3px;
+
+    text-transform: uppercase;
+}
+
+.highcharts__slider {
+    display: block;
+    width: 100%;
+
+    background-color: $white;
+    border-top: 2px solid $red;
+    border-bottom: 1px solid rgba($color: $gray, $alpha: 0.3);
+}

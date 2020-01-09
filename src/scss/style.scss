@@ -1,0 +1,36 @@
+@import "vars";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+    background-color: $white__bg;
+    color: $black;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+}
+
+/*  Blocks  */
+
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/burger";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/highcharts";
+@import "blocks/nav";
+@import "blocks/slider";
+@import "blocks/footer";
